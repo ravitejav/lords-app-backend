@@ -39,3 +39,9 @@ app.get('/api/:game/:gameId', async (request, response) => {
   
     response.json(game_data);
 });
+
+app.get('/health', async(req, res) => {
+  res.json({
+    status: 'ok'
+  })
+});
